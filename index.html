@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo.jpg" alt="logo" width="150">
+        </div>
+        <h1>SUNSHINE HOTEL</h1>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Phòng nghỉ</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section class="title">
+        <h2>Chào mừng đến với Sunshine Hotel</h2>
+        <p>
+            Không gian nghỉ dưỡng hiện đại, sang trọng và tiện nghi.
+        </p>
+    </section>
+    <section class="rooms">
+        <h2>Các loại phòng</h2>
+        <div class="room-container">
+            <article class="room">
+                <img src="/standard.jpg" alt="Standard">
+                <h3>Phòng tiêu chuẩn</h3>
+                <button onclick="show(
+                'Phòng Standard',
+                '500.000 VNĐ/đêm',
+                '1 giường đôi, Wifi miễn phí, Máy lạnh')">
+                    Xem chi tiết
+                </button>
+            </article>
+            <article class="room">
+                <img src="/deluxe.jpg" alt="Deluxe">
+                <h3>Phòng cao cấp</h3>
+                <button onclick="show(
+                'Phòng Deluxe',
+                '900.000 VNĐ/đêm',
+                'Ban công, TV 50 inch, Buffet sáng')">
+                    Xem chi tiết
+                </button>
+            </article>
+            <article class="room">
+                <img src="/vip.jpg" alt="VIP">
+                <h3>Phòng VIP</h3>
+                <button onclick="show(
+                'Phòng VIP',
+                '1.500.000 VNĐ/đêm',
+                'View biển, Bồn tắm, Buffet cao cấp')">
+                    Xem chi tiết
+                </button>
+            </article>
+        </div>
+    </section>
+    <section class="detail-box">
+        <h2 id="roomName">
+            Chọn phòng để xem chi tiết
+        </h2>
+        <p id="roomPrice"></p>
+        <p id="roomInfo"></p>
+        <button onclick="bookRoom()">
+            Đặt phòng ngay
+        </button>
+    </section>
+    <section class="img">
+        <h2>Thư viện ảnh</h2>
+        <div class="grid-container">
+
+            <div class="box">
+                <img src="/sunshine.jpg" width="550" height="150">
+            </div>
+             <div class="box">
+                <img src="/sanh.jpg" width="550" height="150">
+            </div>
+             <div class="box">
+                <img src="/nhahang.jpg" width="550" height="150">
+            </div>
+             <div class="box">
+                <img src="/hoboi.jpg" width="550" height="150">
+            </div>
+             <div class="box">
+                <img src="/cochunho.jpg" width="150" height="150">
+            </div>
+             <div class="box">
+                <img src="/vip.jpg" width="550" height="150">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Thông tin liên hệ</h3>
+        <p>Email: sunshinehotel@gmail.com</p>
+        <p>SĐT: 19000091</p>
+        <p>Địa chỉ: Thạch Hà - Hà Tĩnh</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
